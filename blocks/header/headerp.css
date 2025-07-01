@@ -1,0 +1,207 @@
+/* Top black strip styling */
+.top-strip {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 8px 16px;
+  gap: 16px;
+}
+
+.top-strip a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.top-strip a:hover {
+  text-decoration: underline;
+}
+
+.country-dropdown {
+  background-color: #222;
+  color: #fff;
+  border: none;
+  padding: 6px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+/* Nav wrapper with border under black strip */
+.nav-wrapper {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Nav main container (white strip) */
+.nav-wrapper nav {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+}
+
+/* Brand (logo) */
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+.nav-brand img {
+  max-height: 40px;
+}
+
+/* Nav sections */
+.nav-sections {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-sections a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-sections a:hover {
+  text-decoration: underline;
+}
+
+/* Nav tools (search) */
+.nav-tools {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* Search bar styling */
+.nav-tools input[type="text"] {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 6px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.nav-tools input[type="text"]:focus {
+  outline: 2px solid #ccc;
+}
+
+/* Search icon next to search input */
+.nav-tools .search-icon {
+  font-size: 18px;
+  color: #666;
+}
+
+/* Hamburger icon styling for mobile */
+.nav-hamburger {
+  display: none;
+}
+
+.nav-hamburger button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.nav-hamburger-icon {
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+  display: block;
+  position: relative;
+}
+
+.nav-hamburger-icon::before,
+.nav-hamburger-icon::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: #333;
+  left: 0;
+}
+
+.nav-hamburger-icon::before {
+  top: -8px;
+}
+
+.nav-hamburger-icon::after {
+  top: 8px;
+}
+
+/* Dropdown nav sections (desktop) */
+.nav-drop {
+  position: relative;
+}
+
+.nav-drop > ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 8px 0;
+  min-width: 160px;
+  z-index: 10;
+}
+
+.nav-drop[aria-expanded="true"] > ul {
+  display: block;
+}
+
+.nav-drop > ul > li > a {
+  display: block;
+  padding: 8px 16px;
+  color: #333;
+}
+
+.nav-drop > ul > li > a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsive: mobile layout */
+@media (max-width: 900px) {
+  .nav-wrapper nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-sections {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav-sections a {
+    padding: 12px 0;
+    display: block;
+    width: 100%;
+  }
+
+  .nav-hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  .nav-sections,
+  .nav-tools {
+    display: none;
+    width: 100%;
+  }
+
+  nav[aria-expanded="true"] .nav-sections,
+  nav[aria-expanded="true"] .nav-tools {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav-tools {
+    gap: 8px;
+    padding: 12px 0;
+  }
+}
