@@ -5,7 +5,6 @@ footer {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
 }
 
-/* Outer container */
 footer .footer > div {
   display: flex;
   flex-direction: column;
@@ -14,20 +13,17 @@ footer .footer > div {
   padding: 40px 24px 24px;
 }
 
-/* All sections default styling */
 footer .footer .section {
   width: 100%;
   margin-bottom: 24px;
 }
 
-/* Default text and links */
 footer .footer .section .default-content-wrapper p,
 footer .footer .section .default-content-wrapper ul {
   margin: 0;
   padding: 0;
 }
 
-/* Style all links */
 footer .footer a {
   color: #fff;
   text-decoration: none;
@@ -38,7 +34,6 @@ footer .footer a:hover {
   text-decoration: underline;
 }
 
-/* Top row: logo + nav + follow us in same line */
 footer .footer .section:nth-child(1),
 footer .footer .section:nth-child(2),
 footer .footer .section:nth-child(3) {
@@ -54,7 +49,6 @@ footer .footer .section:nth-child(3) .default-content-wrapper {
   flex-wrap: wrap;
 }
 
-/* Make first three sections appear side by side */
 footer .footer .section:nth-child(1),
 footer .footer .section:nth-child(2),
 footer .footer .section:nth-child(3) {
@@ -63,14 +57,12 @@ footer .footer .section:nth-child(3) {
   width: auto;
 }
 
-/* Logo bigger */
 footer .footer .icon-wknd-logo-light img {
   width: 140px;
   height: auto;
   display: block;
 }
 
-/* Nav links styling */
 footer .footer .section:nth-child(2) .default-content-wrapper ul {
   display: flex;
   gap: 24px;
@@ -78,7 +70,6 @@ footer .footer .section:nth-child(2) .default-content-wrapper ul {
   flex-wrap: wrap;
 }
 
-/* Follow Us styling */
 footer .footer .section:nth-child(3) .default-content-wrapper {
   display: flex;
   align-items: center;
@@ -91,7 +82,6 @@ footer .footer .section:nth-child(3) .default-content-wrapper p {
   margin: 0;
 }
 
-/* Social icons styling (put them in a horizontal box) */
 footer .footer .section:nth-child(3) .default-content-wrapper p span.icon {
   display: inline-block;
   margin-right: 12px;
@@ -103,7 +93,6 @@ footer .footer .section:nth-child(3) .default-content-wrapper p span.icon img {
   display: block;
 }
 
-/* Copyright and description styling */
 footer .footer .section:nth-child(4) .default-content-wrapper {
   display: block;
   font-size: 12px;
@@ -125,7 +114,6 @@ footer .footer .section:nth-child(4) .default-content-wrapper a:hover {
   color: #fff;
 }
 
-/* Responsive stacking */
 @media (max-width: 768px) {
   footer .footer .section:nth-child(1),
   footer .footer .section:nth-child(2),

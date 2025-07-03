@@ -41,7 +41,7 @@
   max-width: 100%;
   color: #828181;
 }
-.members .members-card-body .button {
+.cards .cards-card-body .button {
   display: inline-block;
   background-color: #e0e0e0;   /* light grey background */
   color: #000;                 /* black text */
