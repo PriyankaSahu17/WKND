@@ -1,4 +1,4 @@
-.cards > ul {
+.members > ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -7,49 +7,47 @@
   grid-gap: 24px;
 }
 
-.cards > ul > li {
+
+.members > ul > li {
+  display: flex;
+  flex-direction: column-reverse; /* This flips children: text first, image second */
   border: 1px solid #ffffff;
   background-color: white;
+  position: relative;
+  filter: blur(1px);       /* blur content */
+  pointer-events: none;    /* prevent clicks */
+  user-select: none;       /* prevent text selection */
+  overflow: hidden;
 }
 
-.cards .cards-card-body {
+
+.members .members-card-body {
   margin: 0;
   padding: 0;
   width: 100%;
   box-sizing: border-box;
 }
-.cards .cards-card-image {
+.members .members-card-image {
   line-height: 0;
 }
 
-.cards > ul > li img {
+.members > ul > li img {
   width: 100%;
-  aspect-ratio: 3.6 / 2.5;
+  aspect-ratio: 7/ 4;
   object-fit: cover;
 }
-.cards .cards-card-body h3 {
+.members .members-card-body h3 {
   text-transform: uppercase;
   margin: 8px 0 8px; /* Adds space under heading */
 }
-.cards .cards-card-body p {
+.members .members-member-body p {
   display: -webkit-box;
   -webkit-line-clamp: 1; /* Number of lines before cutting off */
   -webkit-box-orient: vertical;
   overflow: hidden;
+  padding: 10px;
   text-overflow: ellipsis;
   text-transform: uppercase;
   max-width: 100%;
   color: #828181;
-}
-.members .members-card-body .button {
-  display: inline-block;
-  background-color: #e0e0e0;   /* light grey background */
-  color: #000;                 /* black text */
-  text-decoration: none;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 0;            /* sharp corners */
-  font-weight: bold;
-  text-transform: uppercase;   /* uppercase text */
-  font-size: 14px;
 }

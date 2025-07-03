@@ -205,3 +205,241 @@
     padding: 12px 0;
   }
 }
+/*Top black strip
+header .top-strip {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 24px;
+  background-color: #000;
+  color: #fff;
+  padding: 4px 16px;
+  font-size: 15px;
+  line-height: 1.2;
+  font-family: var(--fontFamilySansSerif, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif);
+}
+
+/* Sign In link */
+header .top-strip a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
+header .top-strip a:hover {
+  text-decoration: underline;
+}
+
+/* Country selector container */
+header .country-selector {
+  position: relative;
+}
+
+/* Toggle button */
+header .country-selector .country-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* Flag image in toggle */
+header .country-selector .country-toggle img {
+  width: 24px;
+  height: 24px; /* more balanced */
+  object-fit: cover;
+}
+
+/* Country text */
+header .country-selector .country-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+/* Country name */
+header .country-selector .country-text div:first-child {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Country codes */
+header .country-selector .country-codes {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+/* Dropdown list */
+header .country-selector .country-list {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #fff;
+  color: #000;
+  list-style: none;
+  margin: 0;
+  padding: 4px 0;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  z-index: 10;
+  width: 220px;
+  max-height: 300px; /* allow scrolling if many items */
+  overflow-y: auto;
+}
+
+/* Show when open */
+header .country-selector.open .country-list {
+  display: block;
+}
+
+/* List item */
+header .country-selector .country-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+header .country-selector .country-list li:hover {
+  background: #f0f0f0;
+}
+
+/* Flag in dropdown */
+header .country-selector .country-list img {
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+
+/* Nav wrapper (white nav strip) */
+header .nav-wrapper nav {
+  --nav-height: 56px;
+  background-color: #fff;
+  color: var(--textColor, #202020);
+  display: grid;
+  grid-template:
+    'hamburger brand tools' var(--nav-height)
+    'sections sections sections' auto
+    / auto 1fr auto;
+  align-items: center;
+  gap: 0 24px;
+  padding: 0 16px;
+  font-family: var(--fontFamilySansSerif, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+/* Hamburger styles */
+header nav .nav-hamburger {
+  grid-area: hamburger;
+  height: 22px;
+  display: flex;
+  align-items: center;
+}
+header nav .nav-hamburger button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+header nav .nav-hamburger-icon,
+header nav .nav-hamburger-icon::before,
+header nav .nav-hamburger-icon::after {
+  width: 20px;
+  height: 2px;
+  background: currentcolor;
+  display: block;
+  position: relative;
+  border-radius: 2px;
+}
+header nav .nav-hamburger-icon::before,
+header nav .nav-hamburger-icon::after {
+  content: '';
+  position: absolute;
+}
+header nav .nav-hamburger-icon::before {
+  top: -6px;
+}
+header nav .nav-hamburger-icon::after {
+  top: 6px;
+}
+
+/* Nav brand */
+header .nav-brand img {
+  width: 120px;
+  height: auto;
+}
+
+/* Nav sections (mobile hidden) */
+header nav .nav-sections {
+  grid-area: sections;
+  display: none;
+}
+header nav[aria-expanded="true"] .nav-sections {
+  display: block;
+}
+
+/* Nav sections (desktop) */
+@media (min-width: 900px) {
+  header .nav-wrapper nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 32px;
+  }
+  header nav .nav-sections {
+    display: block;
+  }
+  header nav .nav-sections ul {
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  header nav .nav-sections li {
+    position: relative;
+    cursor: pointer;
+  }
+  header nav .nav-sections .nav-drop::after {
+    content: '';
+    border: solid currentcolor;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(45deg);
+    margin-left: 4px;
+  }
+  header nav .nav-sections li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 6px 0;
+    min-width: 160px;
+    z-index: 5;
+  }
+  header nav .nav-sections li[aria-expanded="true"] ul {
+    display: block;
+  }
+  header nav .nav-sections li ul li {
+    padding: 6px 12px;
+  }
+  header nav .nav-sections li ul li:hover {
+    background: #f0f0f0;
+  }
+}
+
+/* Hide AEM extra content */
+.section.flag-container.nav-brand {
+  display: none;
+}
+
+/* Nav tools */
+header nav .nav-tools {
+  grid-area: tools;
+}
+*/
